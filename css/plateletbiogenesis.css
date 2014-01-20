@@ -1,0 +1,226 @@
+h1, h2, h3, h4, h5, h6, p
+{
+  font-family: 'Bitter', serif;
+  font-color: #999;
+}
+
+.navbar
+{
+  min-height: 75px;
+}
+
+.navbar .navbar-brand
+{
+  font-family: 'Bitter', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 75px;
+  vertical-align: middle;
+  padding: 0 25px;
+  color: #333;
+  text-shadow: #CCC 2px 2px 0px;
+  transition: color .5s;
+}
+
+.navbar .navbar-brand:hover
+{
+	color: #de1f1f;
+}
+
+.navbar .navbar-nav>li>a
+{
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  line-height: 45px;
+  vertical-align: middle;
+  margin: 15px 0px 0px 0px;
+  padding: 0 15px;
+  transition: background-color 0.5s;
+}
+
+.navbar .navbar-nav>li>a:hover, 
+.navbar .navbar-nav>li.active>a, 
+.navbar .navbar-nav>li.active>a:hover
+{
+	color: #de1f1f;
+	background-color: #eee;
+	border-radius: 5px;
+  background-image: none;
+	background-color: #eee;
+  box-shadow: none;
+}
+
+.navbar .navbar-toggle
+{
+  margin-top: 21px;
+}
+
+body 
+{ 
+  padding-top: 75px; 
+}
+
+.parallax 
+{ 
+  background-size: cover;
+	height: 400px;  
+	margin: 0 auto; 
+  position: relative; 
+}
+
+#parallax1
+{
+	background-image: url(../img/1.jpg); 
+}
+
+#parallax2
+{
+	background-image: url(../img/4.jpg); 
+}
+
+#parallax3
+{
+	background-image: url(../img/2.jpg); 
+}
+
+#parallax4
+{
+	background-image: url(../img/testtubes.jpg); 
+}
+
+#parallax1 h1
+{
+	font-size: 100px;
+  font-style: italic;
+  margin: 0;
+  padding: 125px 0 175px 0;
+  height: 100px;
+  text-shadow: #FFF 3px 3px 0px;
+}
+
+.highlight
+{
+	color: #de1f1f;
+}
+
+#parallax1 h1 .highlight
+{
+  font-size: 110px;
+}
+
+.feature
+{
+}
+
+.feature div:first-child
+{
+	margin-top: 125px;
+}
+
+.feature div:last-child
+{
+	margin-bottom: 125px;
+}
+
+.feature.top div:last-child
+{
+	margin-bottom: 0;
+}
+
+.feature.bottom div:first-child
+{
+	margin-top: 0;
+}
+
+.feature.mid div
+{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.feature h1
+{
+	font-size: 75px;
+  text-shadow: #DDD 2px 2px 0px;
+	font-weight: 400;
+  font-style: italic;
+	color: #de1f1f;
+}
+
+.feature h2
+{
+	font-weight: 400;
+	font-style: italic;
+	margin-top: 25px;
+}
+
+.feature h3
+{
+	font-size: 18px;
+}
+
+.feature p.social
+{
+  font-size: 24px;
+  color: #666;
+}
+
+.feature p.social i
+{
+  transition: color 0.5s;
+}
+
+.feature p.social i:hover
+{
+  font-size: 24px;
+	color: #de1f1f;
+}
+
+.container-full 
+{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.center
+{
+  text-align: center;
+}
+
+@media(max-width:1023px)
+{
+  #parallax1 h1
+  {
+	  font-size: 90px;
+    padding: 150px 0 150px 0;
+	}
+
+  #parallax1 h1 .highlight
+  {
+    font-size: 80px;
+  }
+}
+
+@media(max-width:767px)
+{
+  #parallax1 h1
+  {
+	  font-size: 60px;
+	}
+
+  #parallax1 h1 .highlight
+  {
+    font-size: 70px;
+  }
+
+  .feature h1
+  {
+  	font-size: 50px;
+  }
+  
+  .feature h2
+  {
+    font-size: 25px;
+  }
+}
