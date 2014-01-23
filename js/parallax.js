@@ -10,7 +10,7 @@ $(document).ready(function(){
       var scrolled = (windowScroll - objectPos + windowHeight) / (objectHeight + windowHeight);
       scrolled = Math.max(Math.min(scrolled, 1), 0);
       
-      var coords = '50% ' + (1 - scrolled) * 100 + '%';
+      var coords = '35% ' + (1 - scrolled) * 100 + '%';
 
       $scroll.css({ backgroundPosition: coords });   
     }
