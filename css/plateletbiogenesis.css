@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p, cite
   min-height: 75px;
 }
 
-.navbar-inverse
+.navbar.navbar-inverse
 {
   background-image: none;
   background-color: #333;
@@ -62,6 +62,41 @@ h1, h2, h3, h4, h5, h6, p, cite
   margin-top: 21px;
 }
 
+.navbar.navbar-footer
+{
+  min-height: 42px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.navbar.navbar-footer .navbar-right li a
+{
+}
+
+.navbar.navbar-footer .navbar-nav>li>a
+{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: middle;
+  margin: 5px 0px 0px 0px;
+  padding: 0 15px;
+  transition: color 0.5s;
+}
+
+.navbar.navbar-footer .navbar-nav>li>a:hover, 
+.navbar.navbar-footer .navbar-nav>li.active>a, 
+.navbar.navbar-footer .navbar-nav>li.active>a:hover
+{
+	color: #FFF;
+	background-color: #333;
+  background-image: none;
+  box-shadow: none;
+}
+
 body 
 { 
   padding-top: 80px; 
@@ -77,34 +112,40 @@ body
 
 #parallax1
 {
-	background-image: url(../img/1.jpg); 
+	background-image: url(../img/1_compressed.jpg); 
 }
 
 #parallax2
 {
-	background-image: url(../img/4.jpg); 
+	background-image: url(../img/4_compressed.jpg); 
 }
 
 #parallax3
 {
-	background-image: url(../img/2.jpg); 
+	background-image: url(../img/2_compressed.jpg); 
 }
 
 #parallax4
 {
-	background-image: url(../img/5.jpg); 
+	background-image: url(../img/5_compressed.jpg); 
 }
 
 #parallax5
 {
-	background-image: url(../img/1.jpg); 
+	background-image: url(../img/1_compressed.jpg); 
+}
+
+#parallax1
+{
 }
 
 #parallax1 h4
 {
+  box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, .4);
+  background-color: rgba(255, 255, 255, .4);
   margin-top: 135px;
-  text-shadow: #FFF 0px 0px 2px;
   line-height: 25px;
+  font-weight: 100;
 }
 
 #parallax1 cite
@@ -115,6 +156,14 @@ body
   text-shadow: #FFF 0px 0px 2px;
   line-height: 25px;
   text-align: right;
+}
+
+#mkimg
+{
+  height: 680px;
+  background: transparent url(../img/mk.jpg) 50% 100% no-repeat;
+  background-size: contain;
+  margin: 0;
 }
 
 .feature
@@ -161,6 +210,11 @@ body
 	font-weight: 400;
 }
 
+.feature h2 + h1
+{
+  margin-top: 50px;
+}
+
 
 .feature .highlight
 {
@@ -201,7 +255,16 @@ body
   text-align: center;
 }
 
-@media(max-width:1023px)
+@media(max-width:1200px)
+{
+
+  #mkimg
+  {
+    height: 550px;
+  }
+}
+
+@media(max-width:991px)
 {
   #parallax1 h1
   {
@@ -232,6 +295,11 @@ body
   { 
     background-size: 125%;
   }
+
+  #mkimg
+  {
+    height: 425px;
+  }
 }
 
 @media(max-width:767px)
@@ -256,6 +324,11 @@ body
   { 
     background-size: 150%;
     height: 300px;  
+  }
+
+  #mkimg
+  {
+    height: 400px;
   }
 }
 
@@ -298,5 +371,10 @@ body
   {
     margin-top: 0;
     margin-bottom: 0;
+  }
+
+  #mkimg
+  {
+    height: 225px;
   }
 }
