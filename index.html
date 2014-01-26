@@ -32,12 +32,10 @@
   <script type="text/javascript">
     $(document).ready( function() {
       $('#mkaccordion').on('show.bs.collapse', function () {
-        $('#mkaccordion .panel-title a i').removeClass('fa-plus-square-o');
-        $('#mkaccordion .panel-title a i').addClass('fa-minus-square-o');
+        $('#mkaccordion .panel-title a .toggle').html('&ndash;');
       });
       $('#mkaccordion').on('hide.bs.collapse', function () {
-        $('#mkaccordion .panel-title a i').addClass('fa-plus-square-o');
-        $('#mkaccordion .panel-title a i').removeClass('fa-minus-square-o');
+        $('#mkaccordion .panel-title a .toggle').html('+');
       });
     });
   </script>
@@ -135,7 +133,7 @@
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#mkaccordion" href="#mkcollapse">
-                <i class="fa fa-plus-square-o"></i> Learn How Megakaryocytes Produce Platelets
+                <span class="toggle">+</span> How Megakaryocytes Produce Platelets
               </a>
             </h4>
           </div>

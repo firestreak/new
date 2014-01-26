@@ -161,7 +161,7 @@ body
 #mkimg
 {
   height: 680px;
-  background: transparent url(../img/mk.jpg) 50% 100% no-repeat;
+  background: transparent url(../img/mk.jpg) 50% 50% no-repeat;
   background-size: contain;
   margin: 0;
 }
@@ -250,22 +250,38 @@ body
 	color: #2a6496;
 }
 
+.feature .panel
+{
+  border-radius: 0;
+}
+
+.feature .panel-heading
+{
+  background-image: none;
+}
+
 .feature .panel-group.no-space
 {
-  margin-top: 25px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
 .feature .panel-group a
 {
-	color: #000;
+	color: #333;
   transition: color 0.5s;
+}
+
+.feature .panel-group a span.toggle
+{
+  display: inline-block;
+  width: 15px;
 }
 
 .feature .panel-group a:hover
 {
 	text-decoration: none;
-	color: #2a6496;
+	color: #000;
 }
 
 .container-full 
@@ -283,9 +299,9 @@ body
 {
   display:inline-block;
   margin-bottom: -2px;
-  width: 22px;
-  height: 22px;
-  background:transparent url(../img/researchgate.jpg) 50% 50% no-repeat;
+  width: 21px;
+  height: 21px;
+  background:transparent url(../img/researchgate.png) 50% 50% no-repeat;
   background-size: contain; 
 }
 
