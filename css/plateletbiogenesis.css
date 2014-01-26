@@ -190,6 +190,12 @@ body
 	margin-top: 0;
 }
 
+.feature .no-space div:first-child, 
+.feature .no-space div:last-child
+{
+  margin: 0;
+}
+
 .feature.mid div
 {
   margin-top: 0;
@@ -244,6 +250,24 @@ body
 	color: #2a6496;
 }
 
+.feature .panel-group.no-space
+{
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+.feature .panel-group a
+{
+	color: #000;
+  transition: color 0.5s;
+}
+
+.feature .panel-group a:hover
+{
+	text-decoration: none;
+	color: #2a6496;
+}
+
 .container-full 
 {
   margin: 0 auto;
@@ -253,6 +277,16 @@ body
 .center
 {
   text-align: center;
+}
+
+.rg
+{
+  display:inline-block;
+  margin-bottom: -2px;
+  width: 22px;
+  height: 22px;
+  background:transparent url(../img/researchgate.jpg) 50% 50% no-repeat;
+  background-size: contain; 
 }
 
 @media(max-width:1200px)

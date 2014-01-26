@@ -28,17 +28,18 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 	<script type="text/javascript" src="js/scrollto.js"></script>
+
   <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-38029989-1']);
-    _gaq.push(['_trackPageview']);
-  
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  
+    $(document).ready( function() {
+      $('#mkaccordion').on('show.bs.collapse', function () {
+        $('#mkaccordion .panel-title a i').removeClass('fa-plus-square-o');
+        $('#mkaccordion .panel-title a i').addClass('fa-minus-square-o');
+      });
+      $('#mkaccordion').on('hide.bs.collapse', function () {
+        $('#mkaccordion .panel-title a i').addClass('fa-plus-square-o');
+        $('#mkaccordion .panel-title a i').removeClass('fa-minus-square-o');
+      });
+    });
   </script>
 </head>
 
@@ -124,12 +125,27 @@
         We <span class="highlight">mimic human bone marrow</span> to trigger platelet production from megakaryocytes.
       </h2>
       <h2>
-        Our <strong>patented</strong> technology can scale production to yield a safer and unlimited supply of human platelets.
+        Our <strong>patented technology</strong> can scale production to yield a safer and unlimited supply of human platelets.
       </h2>
       <h2>
         We will <span class="highlight">support and then disrupt</span> the existing donor-based system. 
       </h2>
-      <div id="mkimg"></div>
+      <div class="panel-group no-space" id="mkaccordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#mkaccordion" href="#mkcollapse">
+                <i class="fa fa-plus-square-o"></i> Learn How Megakaryocytes Produce Platelets
+              </a>
+            </h4>
+          </div>
+          <div id="mkcollapse" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div id="mkimg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -151,7 +167,7 @@
       <p>Jonathan is currently an Instructor at Brigham and Women’s Hospital and Harvard Medical School. Jonathan received his Ph.D. in Biochemistry and Molecular Biology from the University of British Columbia, Canada, where he worked closely with Canadian Blood Services for the improvement of the processing and storage of blood platelets. Jonathan co-developed PBG’s bio-mimetic microfluidic platform to generate human platelets with Linas Mazutis and Joseph Italiano.</p>
       <p class="social">
         <a href="http://www.linkedin.com/profile/view?id=170909202" target="_blank" title="Linked In"><i class="fa fa-linkedin-square"></i></a>
-        <a href="https://www.researchgate.net/profile/Jonathan_Thon/" target="_blank" title="Research Gate"><i class="fa fa-pencil-square"></i></a>
+        <a href="https://www.researchgate.net/profile/Jonathan_Thon/" target="_blank" title="Research Gate"><i class="rg"></i></a>
         <a href="http://www.drthon.com" target="_blank" title="Personal Site"><i class="fa fa-external-link-square"></i></a>
         <a href="https://twitter.com/JonathanThon" target="_blank" title="Twitter"><i class="fa fa-twitter-square"></i></a>
         <a href="mailto:jthon@plateletbiogenesis.com" title="Email Jonathan"><i class="fa fa-envelope"></i></a>
@@ -163,7 +179,7 @@
       <p>Joseph is currently an Associate Professor at Brigham and Women’s Hospital, and holds cross-appointments at Boston Children’s Hospital and Harvard Medical School. Joseph received a B.Sc. in Biology from The College of New Jersey and a PhD in Cell Biology from Florida State University. Joseph has over 15 years of experience studying platelet production</p>
       <p class="social">
         <a href="http://www.linkedin.com/profile/view?id=105039984" target="_blank" title="Linked In"><i class="fa fa-linkedin-square"></i></a>
-        <a href="https://www.researchgate.net/profile/Joseph_Italiano2/" target="_blank" title="Research Gate"><i class="fa fa-pencil-square"></i></a>
+        <a href="https://www.researchgate.net/profile/Joseph_Italiano2/" target="_blank" title="Research Gate"><i class="rg"></i></a>
         <a href="http://connects.catalyst.harvard.edu/Profiles/display/Person/64637" target="_blank" title="Personal Site"><i class="fa fa-external-link-square"></i></a>
         <a href="mailto:jitaliano@plateletbiogenesis.com" title="Email Joseph"><i class="fa fa-envelope"></i></a>
       </p>
@@ -186,6 +202,7 @@
       <p>Linus Mazutis is currently a Research Fellow at Harvard University and has over eight years of experience developing and applying microfluidic systems to various biological and biomedical applications. Technological innovations developed by Linas Mazutis are currently being used by such companies as Novozymes, RainDance Technologies and BioRad.</p>
       <p class="social">
         <!-- a href="http://www.linkedin.com/pub/linas-mazutis/3/9b1/b97" target="_blank" title="Linked In"><i class="fa fa-linkedin-square"></i></a-->
+        <a href="http://www.researchgate.net/profile/Linas_Mazutis2/" target="_blank" title="Research Gate"><i class="rg"></i></a>
         <a href="mailto:lmazutis@plateletbiogenesis.com" title="Email Linas"><i class="fa fa-envelope"></i></a>
       </p>
     </div>
