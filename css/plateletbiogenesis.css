@@ -110,6 +110,11 @@ body
   position: relative; 
 }
 
+.parallax.offset
+{
+	height: 300px;
+}
+
 #parallax1
 {
 	background-image: url(../img/1_compressed.jpg); 
@@ -133,6 +138,11 @@ body
 #parallax5
 {
 	background-image: url(../img/1_compressed.jpg); 
+}
+
+#parallax6
+{
+	background-image: url(../img/4_compressed.jpg); 
 }
 
 #parallax1
@@ -349,6 +359,47 @@ body
   #mkimg
   {
     height: 425px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar-nav {
+    position:fixed;
+    top: 190px;
+    z-index: 100;
+  }
+
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+    padding: 0;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+  	color: #666;
+  }
+  
+  .sidebar-nav .navbar .navbar-nav>li>a:hover, 
+  .sidebar-nav .navbar .navbar-nav>li.active>a, 
+  .sidebar-nav .navbar .navbar-nav>li.active>a:hover
+  {
+  	color: #333;
+    background-color: #bcd6e9;
+    background-image: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-nav {
+    display: none;
   }
 }
 
