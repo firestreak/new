@@ -247,6 +247,11 @@ body
 	font-size: 18px;
 }
 
+.feature h3.investor
+{
+  text-align: right;
+}
+
 .feature p.social
 {
   font-size: 24px;
@@ -429,6 +434,11 @@ body
   {
     font-size: 20px;
     line-height: 28px;
+  }
+
+  .feature h3.investor
+  {
+    text-align: left;
   }
   
   .parallax 
