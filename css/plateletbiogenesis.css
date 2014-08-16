@@ -286,10 +286,16 @@ body
   margin-bottom: 0;
 }
 
-.feature .panel-group a
+.feature .panel-group.no-space a
 {
 	color: #333;
   transition: color 0.5s;
+}
+
+.feature .panel-group.press
+{
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .feature .panel-group a span.toggle
@@ -298,7 +304,7 @@ body
   width: 15px;
 }
 
-.feature .panel-group a:hover
+.feature .panel-group.no-space a:hover
 {
 	text-decoration: none;
 	color: #000;
